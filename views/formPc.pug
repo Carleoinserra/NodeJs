@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        title Form Input
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+    body
+      div(class="container")
+        h1 Inserisci il pc
+        form(action="/submit", method="POST")
+            label(for="nome") Nome:
+            input(type="text", name="nome" id="nome")
+            label(for="nome") Marca:
+            input(type="text", name="marca" id="nome")
+            label(for="nome") Descrizione:
+            input(type="text", name="descrizione" id="nome")
+            label(for="nome") Prezzo:
+            input(type="text", name="prezzo" id="nome")
+            label(for="nome") Url:
+            input(type="text", name="url" id="nome")
+            button(type="submit") Invia

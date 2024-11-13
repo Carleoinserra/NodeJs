@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        title Form Input
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+        
+        style.
+          img {
+            max-width: 200px;
+           }
+        
+    body
+        div(class="container")
+          form(action="/buy" method="post")
+            table
+                tr
+                    th Nome
+                    th Marca
+                    th Descrizione
+                    th Prezzo
+                    th Img
+                    th Seleziona
+
+                each c1  in lista
+                    tr
+                        td= c1.nome
+                        td= c1.marca
+                        td= c1.descrizione
+                        td= c1.prezzo
+                        td
+                         img(src=c1.url) 
+                        td 
+                         input(type="number" name="num" value="0")
+            input(type="submit")

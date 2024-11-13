@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        title Form Input
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+        
+        style.
+          img {
+            max-width: 200px;
+           }
+        
+    body
+        div(class="container")
+            h1 Recap dell'acquisto
+          
+            table
+                tr
+                    th Nome
+                    th Marca
+                    th Descrizione
+                    th Prezzo
+                    th Img
+                    th Pezzi acquistati
+                
+                each c1, i in lista
+                    tr
+                        td= c1.nome
+                        td= c1.marca
+                        td= c1.descrizione
+                        td= c1.prezzo
+                        td
+                         img(src=c1.url) 
+                        td= listaN[i]
+            h3 Il totale da pagare è 
+             span=somma
+             span  euro
+                        
+            

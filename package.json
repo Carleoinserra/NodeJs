@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3",
+    "prompt-sync": "^4.2.0",
+    "pug": "^3.0.3"
+  }
+}
